@@ -1,0 +1,18 @@
+### Intellij ###
+.idea/
+*.iml
+
+### Eclipse ###
+.settings/
+target/
+build/
+
+# Eclipse Core
+.project
+
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+# STS (Spring Tool Suite)
+.springBeans
+.DS_Store
