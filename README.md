@@ -18,6 +18,7 @@ Software para gerenciar campeonatos de futebol desenvolvido no laboratório de C
 * Maven
 * Shippable
 * Junit
+* Java
 
 # Pré-Requisitos
 
