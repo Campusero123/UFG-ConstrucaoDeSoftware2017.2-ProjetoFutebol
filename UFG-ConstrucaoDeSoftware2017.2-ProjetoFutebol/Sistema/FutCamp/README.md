@@ -1,5 +1,5 @@
 # FutCamp
-Software para gerenciar locadoras de filmes desenvolvido no Laboratório de Desenvolvimento de Software para a Web de 2017/1.
+Software para gerenciar campeonatos de futebol desenvolvido no laboratório de Construção de Software de 2017/2.
 
 # Integrantes
 
