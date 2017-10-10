@@ -19,7 +19,7 @@ Software para gerenciar locadoras de filmes desenvolvido no Laboratório de Dese
 
 ## Obtendo o projeto
 
-`git clone https://github.com/isaiastavares/loca-filmes`
+`git clone https://github.com/Campusero123/UFG-ConstrucaoDeSoftware2017.2-ProjetoFutebol/`
 
 ## Antes de executar
 
