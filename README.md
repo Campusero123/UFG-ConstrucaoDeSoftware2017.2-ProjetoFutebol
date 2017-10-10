@@ -23,6 +23,8 @@ Software para gerenciar campeonatos de futebol desenvolvido no laboratório de C
 # Pré-Requisitos
 
 * PostgreSQL - [Download](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads#windows) 
+  - usuario: postgres
+  - senha: admin
 
 ## Obtendo o projeto
 
