@@ -1,12 +1,11 @@
-# Loca Filmes
+# FutCamp
 Software para gerenciar locadoras de filmes desenvolvido no Laboratório de Desenvolvimento de Software para a Web de 2017/1.
 
 # Integrantes
 
-* [Alexandre Matos](https://github.com/mxalexandre)
+* [Augusto Falcão](https://github.com/Campusero123)
 * [Igor Montenegro](https://github.com/IgorMontenegro)
-* [Isaias Tavares](https://github.com/isaiastavares)
-* [Lucas Campos](https://github.com/lucas-scampos)
+* [Igor Q. Silva](https://github.com/igorqsilva)
 
 ## Tecnologias Utilizadas
 
@@ -32,7 +31,7 @@ Software para gerenciar locadoras de filmes desenvolvido no Laboratório de Dese
 
 ## Acessando a aplicação
 
-Acesse `http://localhost:9090/loca-filmes` em qualquer navegador.
+Acesse `http://localhost:9090/futcamp` em qualquer navegador.
 
 ## Dados de acesso
 
