@@ -15,6 +15,9 @@ Software para gerenciar campeonatos de futebol desenvolvido no laboratório de C
 * Spring
 * JSP
 * PostgreSQL
+* Maven
+* Shippable
+* Junit
 
 # Pré-Requisitos
 
