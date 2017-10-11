@@ -1,5 +1,4 @@
 package br.com.futcamp.conf;
-import br.com.futcamp.model.LocalTimeConverter; 
 
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
@@ -60,8 +59,4 @@ public class AppWebConfiguration extends WebMvcConfigurerAdapter {
 		configurer.enable();
 	}
 
-    @Override
-    public void addFormatters(FormatterRegistry registry) {
-        registry.addConverter(new LocalTimeConverter());
-    }
 }

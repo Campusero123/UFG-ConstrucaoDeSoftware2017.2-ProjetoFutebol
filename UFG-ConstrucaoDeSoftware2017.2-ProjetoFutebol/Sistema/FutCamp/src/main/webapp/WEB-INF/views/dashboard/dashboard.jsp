@@ -13,7 +13,7 @@
 	            <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--2-col-phone">
 	                <div class="mdl-card mdl-shadow--2dp weather">
 	                    <div class="mdl-card__title">
-							<h2 class="mdl-card__title-text">Agora</h2>
+							<h2 class="mdl-card__title-text">Próximo conflito</h2>
 	
 	                        <div class="mdl-layout-spacer"></div>
 	                        <div class="mdl-card__subtitle-text">
@@ -22,11 +22,9 @@
 	                        </div>
 	                    </div>
 	                    <div class="mdl-card__supporting-text mdl-card--expand">
-							<p class="weather-temperature">16<sup>&deg;</sup></p>
-	
-	                        <p class="weather-description">
-								Nublado
-	                        </p>
+							<p class="weather-temperature">10/02<sup></sup></p>
+							<h3 class="mdl-card__title-text">Interestelar x Pernas de Pal</h3>
+							<h1 class="mdl-card__title-text">10:30 AM</h1>
 	                    </div>
 	                </div>
 	            </div>
@@ -34,37 +32,37 @@
 	            <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--2-col-phone">
 	                <div class="mdl-card mdl-shadow--2dp trending">
 	                    <div class="mdl-card__title">
-	                        <h2 class="mdl-card__title-text">Trending</h2>
+	                        <h2 class="mdl-card__title-text">Campeonato Brasileiro (G5)</h2>
 	                    </div>
 	                    <div class="mdl-card__supporting-text">
 	                        <ul class="mdl-list">
 	                            <li class="mdl-list__item">
-									<span class="mdl-list__item-primary-content list__item-text">Velozes e Furiosos 8</span>
+									<span class="mdl-list__item-primary-content list__item-text">Velozes e Furiosos</span>
 	                                <span class="mdl-list__item-secondary-content">
 	                                    <i class="material-icons trending__arrow-up" role="presentation">&#xE5C7</i>
 	                                </span>
-	                                <span class="mdl-list__item-secondary-content trending__percent">1 %</span>
+	                                <span class="mdl-list__item-secondary-content trending__percent">1 º</span>
 	                            </li>
 	                            <li class="mdl-list__item list__item--border-top">
-									<span class="mdl-list__item-primary-content list__item-text">A Cabana</span>
+									<span class="mdl-list__item-primary-content list__item-text">Pernas de Pal</span>
 	                                <span class="mdl-list__item-secondary-content">
 	                                    <i class="material-icons trending__arrow-down" role="presentation">&#xE5C5</i>
 	                                </span>
-	                                <span class="mdl-list__item-secondary-content trending__percent">2 %</span>
+	                                <span class="mdl-list__item-secondary-content trending__percent">2 º</span>
 	                            </li>
 	                            <li class="mdl-list__item list__item--border-top">
 									<span class="mdl-list__item-primary-content list__item-text ">Interestelar</span>
 	                                <span class="mdl-list__item-secondary-content">
 	                                    <i class="material-icons trending__arrow-up" role="presentation">&#xE5C7</i>
 	                                </span>
-	                                <span class="mdl-list__item-secondary-content trending__percent">5 %</span>
+	                                <span class="mdl-list__item-secondary-content trending__percent">5 º</span>
 	                            </li>
 	                            <li class="mdl-list__item list__item--border-top">
 									<span class="mdl-list__item-primary-content list__item-text">Clube da Luta</span>
 	                                <span class="mdl-list__item-secondary-content">
 	                                    <i class="material-icons trending__arrow-up" role="presentation">&#xE5C7</i>
 	                                </span>
-	                                <span class="mdl-list__item-secondary-content trending__percent">18 %</span>
+	                                <span class="mdl-list__item-secondary-content trending__percent">18 º</span>
 	                            </li>
 	                        </ul>
 	                    </div>
@@ -73,17 +71,12 @@
 				<div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--2-col-phone">
 					<div class="mdl-card mdl-shadow--2dp piratas-do-caribe">
 						<div class="mdl-card__title mdl-card--expand">
-							<h2 class="mdl-card__title-text">Lançamento</h2>
+							<h2 class="mdl-card__title-text">Histórico</h2>
 						</div>
 						<div class="mdl-card__supporting-text">
 							<div>
-								O capitão Salazar (Javier Bardem) é a nova pedra no sapato do capitão Jack Sparrow
-								(Johnny Depp).
-								Ele lidera um exército de piratas fantasmas assassinos e está disposto a matar todos os
-								piratas
-								existentes na face da Terra. Para escapar, Sparrow precisa encontrar o Tridente de
-								Poseidon,
-								que dá ao seu dono o poder de controlar o mar.
+								O ultimo jogo do Campeonato Brasileiro que você está foi:
+								(Clube da luta) 2 x 1 (Pernas de Pal). 
 							</div>
 						</div>
 					</div>
