@@ -11,12 +11,12 @@
     <c:url value="/resources/css" var="cssPath" />
     <c:url value="/resources/images" var="imagemPath" />
 
-    <link rel="icon" type="image/png" href="${contextPath}resources/images/LF_16х16.png">
+    <link rel="icon" type="image/png" href="${contextPath}resources/images/FC_16х16.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Site para gerenciar sua Locadora de Filmes">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login - Loca Filmes</title>
+    <title>Login - FutCamp</title>
 
     <!-- inject:css -->
     <link rel="stylesheet" href="${cssPath}/bootstrap.min.css" />
@@ -30,7 +30,7 @@
     <form:form servletRelativeAction="/login" method="post">
 	    <div class="row colored">
 	        <div id="contentdiv" class="contcustom">
-	            <img style="width: 150px" src="${imagemPath}/loca-filmes.png" />
+	            <img style="width: 150px" src="${imagemPath}/FC.png" />
 	            <div>
 	                <input name="username" type="text" placeholder="Email" required="true">
 	                <input name="password" type="password" placeholder="Senha"  required="true">
