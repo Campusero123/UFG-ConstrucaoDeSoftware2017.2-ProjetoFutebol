@@ -1,10 +1,5 @@
 package br.com.futcamp.util;
 
-import java.time.LocalTime;  
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.List;
-
 import javax.annotation.PostConstruct;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
