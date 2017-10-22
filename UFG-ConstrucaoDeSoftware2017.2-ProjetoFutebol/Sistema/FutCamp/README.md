@@ -23,7 +23,7 @@ Software para gerenciar campeonatos de futebol desenvolvido no laboratório de C
 
 ## Antes de executar
 
-- Crie um banco no PostgreSQL com o nome <b>loca-filmes</b>
+- Crie um banco no PostgreSQL com o nome <b>bd-campeonato</b>
 
 ## Executando a aplicação
 
