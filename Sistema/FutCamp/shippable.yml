@@ -12,7 +12,7 @@ env:
   global:
     - TEST_RESULTS_DIR=$SHIPPABLE_REPO_DIR/UFG-ConstrucaoDeSoftware2017.2-ProjetoFutebol/Sistema/FutCamp/testresults
     - CODE_COVERAGE_DIR=$SHIPPABLE_REPO_DIR/UFG-ConstrucaoDeSoftware2017.2-ProjetoFutebol/Sistema/FutCamp/codecoverage
-    #- TESTS_LOC_DIR=$SHIPPABLE_REPO_DIR/UFG-ConstrucaoDeSoftware2017.2-ProjetoFutebol/Sistema/FutCamp/src/test
+    - TESTS_LOC_DIR=$SHIPPABLE_REPO_DIR/UFG-ConstrucaoDeSoftware2017.2-ProjetoFutebol/Sistema/FutCamp/src/test
     #- MOD_LOC=$SHIPPABLE_REPO_DIR/UFG-ConstrucaoDeSoftware2017.2-ProjetoFutebol/Sistema/FutCamp/.bin/
 
 build:
@@ -21,7 +21,9 @@ build:
 	
     #Create folders for test and code coverage
     - mkdir -p $TEST_RESULTS_DIR && mkdir -p $CODE_COVERAGE_DIR
-
+	
+    - cd Sistema/FutCamp/
+	
     #Run test and code coverage and output results to the right folder
     - mvn clean cobertura:cobertura
 
