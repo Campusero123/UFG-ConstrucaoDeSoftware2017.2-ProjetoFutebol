@@ -32,7 +32,7 @@ Software para gerenciar campeonatos de futebol desenvolvido no laboratório de C
 
 ## Antes de executar
 
-- Crie um banco no PostgreSQL com o nome <b>loca-filmes</b>
+- Crie um banco no PostgreSQL com o nome <b>bd-campeonato</b>
 
 ## Executando a aplicação
 
@@ -46,6 +46,11 @@ Acesse `http://localhost:9090/futcamp` em qualquer navegador.
 
 - Usuário: admin@admin.com.br
 - Senha: 123456
+
+	* Caso seja necessário (não estiver logando), rodar as seguintes consultas:
+	- value = "insert into Role values ('ROLE_ADMIN')
+	- insert into Usuario (email, nome, senha) values ('admin@admin.com.br', 'Administrador', '$2a$04$qP517gz1KNVEJUTCkUQCY.JzEoXzHFjLAhPQjrg5iP6Z/UmWjvUhq')
+	- insert into Usuario_Role(Usuario_email, roles_nome) values ('admin@admin.com.br', 'ROLE_ADMIN')
 
 ## Como o projeto foi construído
 
