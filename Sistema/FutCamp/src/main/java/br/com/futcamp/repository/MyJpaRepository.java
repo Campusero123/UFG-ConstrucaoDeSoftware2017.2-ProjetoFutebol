@@ -1,5 +1,13 @@
 package br.com.futcamp.repository;
-
+/**
+ * MyJpaRepository.java
+ * Versão: <versaoDoArquivo>
+ * Data de Criação: 27/10/2017
+ * Copyright (c) 2017 UFG - www.ufg.br
+ * Todos os direitos reservados.
+ *
+ * Este software tem o propósito de gerir campeonatos de futebol.
+ */
 import br.com.futcamp.model.Entidade; 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;

@@ -1,5 +1,13 @@
 package br.com.futcamp.conf;
-
+/**
+ * AppWebConfiguration.java
+ * Versão: <versaoDoArquivo>
+ * Data de Criação: 27/10/2017
+ * Copyright (c) 2017 UFG - www.ufg.br
+ * Todos os direitos reservados.
+ *
+ * Este software tem o propósito de gerir campeonatos de futebol.
+ */
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;

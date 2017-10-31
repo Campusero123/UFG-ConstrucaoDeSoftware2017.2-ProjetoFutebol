@@ -1,5 +1,13 @@
 package br.com.futcamp.model;
-
+/**
+ * Usuario.java
+ * Versão: <versaoDoArquivo>
+ * Data de Criação: 27/10/2017
+ * Copyright (c) 2017 UFG - www.ufg.br
+ * Todos os direitos reservados.
+ *
+ * Este software tem o propósito de gerir campeonatos de futebol.
+ */
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;

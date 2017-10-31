@@ -1,5 +1,13 @@
 package br.com.futcamp.util;
-
+/**
+ * PopulaBanco.java
+ * Versão: <versaoDoArquivo>
+ * Data de Criação: 27/10/2017
+ * Copyright (c) 2017 UFG - www.ufg.br
+ * Todos os direitos reservados.
+ *
+ * Este software tem o propósito de gerir campeonatos de futebol.
+ */
 import javax.annotation.PostConstruct;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -10,9 +18,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import br.com.futcamp.repository.MyJpaRepository;
 
-/**
- * Created by astr1x on 08/07/17.
- */
 
 @Component
 public class PopulaBanco {
