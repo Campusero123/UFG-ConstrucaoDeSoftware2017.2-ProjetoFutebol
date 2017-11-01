@@ -12,9 +12,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
-
-import br.com.futcamp.dao.usuário;
-
 import java.io.Serializable;
 
 @MappedSuperclass
@@ -42,7 +39,7 @@ public abstract class Entidade implements Serializable {
     
 	/** 
 	 * Atribui o parâmetro id como ID da Entidade
-	 * @param ID - id que será atribuido
+	 * @param id que será atribuido
 	 */
     public void setId(Long id) {
         this.id = id;
