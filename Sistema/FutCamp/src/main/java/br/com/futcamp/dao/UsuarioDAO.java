@@ -22,10 +22,18 @@ import br.com.futcamp.model.Usuario;
 
 @Repository
 public class UsuarioDAO implements UserDetailsService {
-
+	
+    /** 
+	 * Instacia do configurador do UsuarioDAO
+	 */
 	@PersistenceContext
 	private EntityManager manager;
 	
+	/** 
+	 * Valida se o usuário existe, e caso exista é instanciado
+	 * @return instancia do usuário
+	 * @throws usuário não encontrado
+	 */
 	@Override
 	public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
 		List<Usuario> usuarios = manager.createQuery("select u from Usuario u where u.email = :email", Usuario.class)

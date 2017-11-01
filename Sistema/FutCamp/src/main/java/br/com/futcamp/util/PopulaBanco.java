@@ -21,13 +21,22 @@ import br.com.futcamp.repository.MyJpaRepository;
 
 @Component
 public class PopulaBanco {
-
+	
+	/** 
+	 * Instancia as consultas que vão ser usadas.
+	 */
     @Autowired
     private MyJpaRepository myJpaRepository;
-
+    
+    /** 
+	 * Instancia o configurador
+	 */
     @PersistenceContext
     private EntityManager manager;
-
+    
+    /** 
+	 * Grava os dados do usuário e a relação com a role no BD
+	 */
     @Transactional
     private void insereDadosAdmin() {
         myJpaRepository.insertRole();

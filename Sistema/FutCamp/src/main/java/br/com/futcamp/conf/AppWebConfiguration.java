@@ -26,11 +26,18 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @EnableWebMvc
 @EnableJpaRepositories("br.com.futcamp.repository")
 @ComponentScan(basePackages = {"br.com.futcamp.service",
-		"br.com.futcamp.dao",
-		"br.com.futcamp.controller",
-		"br.com.futcamp.util"})
+							   "br.com.futcamp.dao",
+							   "br.com.futcamp.controller",
+							   "br.com.futcamp.util"
+							  }
+			  )
+
 public class AppWebConfiguration extends WebMvcConfigurerAdapter {
 
+	/** 
+	 * Define o caminho da view
+	 * @return resolver - arquivo com caminho e extensão da view
+	 */
 	@Bean
 	public InternalResourceViewResolver internalResourceViewResolver() {
 		InternalResourceViewResolver resolver = new InternalResourceViewResolver();
@@ -39,6 +46,10 @@ public class AppWebConfiguration extends WebMvcConfigurerAdapter {
 		return resolver;
 	}
 	
+	/** 
+	 * Busca a mensagem de retorno
+	 * @return messageSource - mensagem de retorno
+	 */
 	@Bean
 	public MessageSource messageSource() {
 		ReloadableResourceBundleMessageSource messageSource = new ReloadableResourceBundleMessageSource();
@@ -50,6 +61,10 @@ public class AppWebConfiguration extends WebMvcConfigurerAdapter {
 		return messageSource;
 	}
 	
+	/** 
+	 * Faz as conversões necessárias
+	 * @return conversionService - conversão formatada
+	 */
 	@Bean
 	public FormattingConversionService mvcConversionService() {
 		DefaultFormattingConversionService conversionService = new DefaultFormattingConversionService();
@@ -61,7 +76,10 @@ public class AppWebConfiguration extends WebMvcConfigurerAdapter {
 
 		return conversionService;
 	}
-
+	
+	/** 
+	 * Converte o Servlet
+	 */
 	@Override
 	public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
 		configurer.enable();

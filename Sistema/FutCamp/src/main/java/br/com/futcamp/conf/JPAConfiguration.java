@@ -21,7 +21,11 @@ import java.util.Properties;
 
 @EnableTransactionManagement
 public class JPAConfiguration {
-
+	
+	/** 
+	 * Definição da conexão com o BD
+	 * @return resolver - arquivo com caminho e extensão da view
+	 */
     @Bean
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
         LocalContainerEntityManagerFactoryBean factoryBean = new LocalContainerEntityManagerFactoryBean();
@@ -48,7 +52,11 @@ public class JPAConfiguration {
 
         return factoryBean;
     }
-
+    
+    /** 
+     * Abre a conexão com o BD
+     * @return uma conexão com o BD
+     */
     @Bean
     public JpaTransactionManager transactionManager(EntityManagerFactory emf){
         return new JpaTransactionManager(emf);

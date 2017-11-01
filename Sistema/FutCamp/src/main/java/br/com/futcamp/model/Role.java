@@ -15,20 +15,38 @@ import org.springframework.security.core.GrantedAuthority;
 
 @Entity
 public class Role implements GrantedAuthority {
-
+	
+    /** 
+	 * Instacia do serialVersionUID da Role
+	 */
 	private static final long serialVersionUID = 7872503757574608017L;
 	
+	/** 
+	 * Instacia do nome da Role
+	 */
 	@Id
     private String nome;
 
+	/** 
+	 * Retorna o nome da Role
+	 * @return nome da Role
+	 */
     public String getNome() {
         return nome;
     }
-
+    
+    /** 
+	 * Atribui o parâmetro nome como nome da Role
+	 * @param nome - nome que será atribuido a Role
+	 */
     public void setNome(String nome) {
         this.nome = nome;
     }
     
+    /** 
+	 * Retorna o nome da Role
+	 * @return nome da Role
+	 */
     @Override
     public String getAuthority() {
         return this.nome;

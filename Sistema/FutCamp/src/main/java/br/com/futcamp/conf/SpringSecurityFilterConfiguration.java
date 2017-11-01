@@ -10,6 +10,10 @@ package br.com.futcamp.conf;
  */
 import org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer;
 
+/** 
+ * TODO
+ * Segurança dos métodos utilizados pelo Spring
+ */
 public class SpringSecurityFilterConfiguration extends AbstractSecurityWebApplicationInitializer {
 
 }
