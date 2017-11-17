@@ -1,4 +1,6 @@
 package br.com.futcamp.model;
+import java.util.ArrayList;
+
 /**
  * Time.java
  * Versão: <versaoDoArquivo>
@@ -24,47 +26,91 @@ public class Time extends Entidade {
 	private static final long serialVersionUID = -3086085358857810874L;
 	
 	/** 
-	 * Instacia do titulo do Time
+	 * Instacia do nome do Time
 	 */
 	@Column(nullable = false)
-    private String titulo;
+    private String nome;
 	
 	/** 
-	 * Instacia do quantidade do Time
+	 * Instacia do jogadores do Time
 	 */
     @Column(nullable = false)
-    private Integer quantidade;
+    private ArrayList<Integer> idJogador;
+    
+    /**
+     * Instancia do capitao do Time
+     */
+    @Column(nullable = false)
+    private Integer capitao;
+    
+    /**
+     * Instancia do Id do Time
+     */
+    @Column(nullable = false)
+    private Integer idTime;
     
 	/** 
-	 * Retorna o titulo do Time
-	 * @return titulo da Time
+	 * Retorna o nome do Time
+	 * @return nome do Time
 	 */
-    public String getTitulo() {
-        return titulo;
+    public String getNome() {
+        return nome;
     }
     
     /** 
-	 * Atribui o parâmetro titulo como titulo do Time
-	 * @param titulo - titulo que será atribuido ao Time
+	 * Atribui o parâmetro nome como nome do Time
+	 * @param nome - nome que será atribuido ao Time
 	 */
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
     
 	/** 
-	 * Retorna o quantidade da Time
-	 * @return quantidade da Time
+	 * Retorna o id's de jogadores do Time
+	 * @return id's de jogadores do Time
 	 */
-    public Integer getQuantidade() {
-        return quantidade;
+    public ArrayList<Integer> getIdJogador() {
+        return idJogador;
     }
     
     /** 
-	 * Atribui o parâmetro quantidade como quantidade do Time
-	 * @param quantidade - quantidade que será atribuido ao Time
+	 * Atribui o parâmetro idJogador como idJogador do Time
+	 * @param idJogador - idJogador que será atribuido ao Time
 	 */
-    public void setQuantidade(Integer quantidade) {
-        this.quantidade = quantidade;
+    public void setIdJogador(ArrayList<Integer> idJogador) {
+        this.idJogador = idJogador;
+    }
+    
+    /**
+     * Retorna o capitao do time
+     * @param capitao
+     */
+    public Integer getCapitao() {
+    	return capitao;
+    }
+    
+    /**
+     * Atribui o parâmetro capitao como capitao do Time
+     * @param capitao - capitao que será atribuido ao Time
+     */
+    public void setCapitao(Integer capitao) {
+    	this.capitao = capitao;
+    }
+    
+    /**
+     * Retorna o Id do Time
+     * @return
+     */
+    public Integer getIdTime() {
+    	return idTime;
+    }
+    
+    /**
+     * Atribui o parâmetro idTime como Id do time
+     * @param idTime - idTime que será atribuido ao time
+     */
+    public void setIdTime(Integer idTime) {
+    	this.idTime = idTime;
     }
 
 }
