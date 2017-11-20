@@ -24,7 +24,6 @@ import org.springframework.transaction.annotation.Transactional;
 import br.com.futcamp.model.Time;
 import br.com.futcamp.model.Campeonato;
 import br.com.futcamp.repository.TimeRepository;
-import br.com.loca.filmes.model.Filme;
 import br.com.futcamp.repository.MyJpaRepository;
 
 
