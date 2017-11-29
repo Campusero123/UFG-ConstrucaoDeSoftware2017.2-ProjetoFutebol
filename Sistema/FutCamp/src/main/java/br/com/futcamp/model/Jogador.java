@@ -1,9 +1,10 @@
 package br.com.futcamp.model;
-import java.security.acl.Permission;
-import java.util.ArrayList; 
+import java.security.acl.Permission; 
+import java.util.ArrayList;
 
+import br.com.futcamp.model.Pessoa;
 /**
- * Time.java 
+ * Time.java  
  * Versão: <versaoDoArquivo>
  * Data de Criação: 27/10/2017
  * Copyright (c) 2017 UFG - www.ufg.br
@@ -12,7 +13,6 @@ import java.util.ArrayList;
  * Este software tem o propósito de gerir campeonatos de futebol.
  */
 import javax.persistence.Column;
-import br.com.futcamp.model.Pessoa;
 
 public class Jogador extends Pessoa {
 	
@@ -24,16 +24,10 @@ public class Jogador extends Pessoa {
 	}
 	
 	/** 
-	 * Instacia do time 
-	 */
-	@Column(nullable = false)
-    private String time;
-	
-	/** 
-	 * Instacia do quantidade do Jogador
+	 * Nome do Jogador
 	 */
     @Column(nullable = false)
-    private String descricao;
+    private String nome;
     
     /** 
 	 * Lista de times de cada Jogador
@@ -42,51 +36,35 @@ public class Jogador extends Pessoa {
     private ArrayList<Entidade> listaTimes = new ArrayList();
     
     /** 
-	 * Lista de partidas de cada Jogador
-	 */
-    @SuppressWarnings("rawtypes")
-    private ArrayList<Entidade> listaPartidas = new ArrayList();
-    
-	/** 
-	 * Retorna o nome do Jogador
-	 * @return nome da Jogador
-	 */
-    public String getTime() {
-        return time;
-    }
-    
-    /** 
 	 * Atribui o parâmetro nome como nome do Jogador
 	 * @param nome - nome que será atribuido ao Jogador
 	 */
-    public void setTime(String time) {
-        this.time = time;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
     
 	/** 
 	 * Retorna a descricao da Campeonato
 	 * @return descricao da Campeonato
 	 */
-    public String getDescricao() {
-        return descricao;
-    }
-    
-    /** 
-	 * Atribui a descriçãoo Campeonato
-	 * @param descriçãoo - descriçãoo que será atribuido ao Campeonato
-	 */
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
+    public String getNome() {
+        return nome;
     }
     
     /**
-     * Instancia do Id do Time
+     * Instancia do Id do Jogador
      */
     @Column(nullable = false)
 	private long idJogador;
     
+    @Override
+    public Long getId() {
+    	// TODO Auto-generated method stub
+    	return super.getId();
+    }
+    
     /**
-     * Retorna o Id do Time
+     * Retorna o Id do Jogador
      * @return
      */
     public long getIdJogador() {
@@ -94,8 +72,8 @@ public class Jogador extends Pessoa {
     }
     
     /**
-     * Atribui o parâmetro idTime como Id do time
-     * @param idTime - idTime que será atribuido ao time
+     * Atribui o parâmetro idJogador como Id do Jodagor
+     * @param idJogador - idJogador que será atribuido ao Jogador
      */
     public void setIdJogador(long idJogador) {
     	this.idJogador = idJogador;
