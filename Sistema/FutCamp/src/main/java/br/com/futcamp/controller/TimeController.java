@@ -20,7 +20,7 @@ import br.com.futcamp.service.TimeService;
 @Controller
 @RequestMapping("/Time")
 public class TimeController {
-    /*
+    
 	@Autowired
 	private TimeService timeService;
 	
@@ -44,7 +44,7 @@ public class TimeController {
     public ModelAndView cadastrarTime() {
 		ModelAndView modelAndView = new ModelAndView("time/cadastrar-time", "command", new Time());
 		modelAndView.addObject("titulo", "Cadastrar Time");
-		//modelAndView.addObject("generos", Genero.values());
+		//modelAndView.addObject("generos", Genero.values()); - Exemplo para add outro atributo
 		return modelAndView;
     }
 	
@@ -61,11 +61,15 @@ public class TimeController {
 
     	return listarTime();
     }
-
-	@RequestMapping("/locar")
-    public ModelAndView locarTime() {
-    	ModelAndView modelAndView = new ModelAndView("time/locar-time");
-    	modelAndView.addObject("titulo", "Locar Time");
+	
+	/*
+	 * Exemplo de como chamar outra função
+	 */
+	@RequestMapping("/exibir")
+    public ModelAndView exibirNumeros(Long id) {
+    	ModelAndView modelAndView = new ModelAndView("time/exibir-numeros");
+    	modelAndView.addObject("titulo", "Exibir numeros");
+		modelAndView.addObject("times", timeService.pesquisarJogadores(id));
     	return modelAndView;
     }
 
@@ -76,5 +80,5 @@ public class TimeController {
 
 		return listarTime();
 	}
-	*/
+	
 }

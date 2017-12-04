@@ -10,6 +10,7 @@ import javax.persistence.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import br.com.futcamp.model.Jogador;
 import br.com.futcamp.model.Time;
 import br.com.futcamp.repository.TimeRepository;
 
@@ -22,7 +23,7 @@ public class TimeService {
 
     @Autowired
     private TimeRepository timeRepository;
-    /*
+    
     @PersistenceContext
 	private EntityManager manager;
     
@@ -65,5 +66,17 @@ public class TimeService {
     	
 		return times;
     }
-    */
+    
+    public List<Jogador> pesquisarJogadores(Long idTime) {
+    	StringBuilder query = new StringBuilder();
+		query.append("select * from jogador where 1=1");
+    	query.append(" and LOWER(idtime) like LOWER('%")
+    		 .append(idTime)
+    		 .append("%')");
+    	
+    	Query typeQuery = manager.createNativeQuery(query.toString(), Jogador.class);
+    	List<Jogador> jogadores = typeQuery.getResultList();
+    	
+		return jogadores;
+    }
 }
