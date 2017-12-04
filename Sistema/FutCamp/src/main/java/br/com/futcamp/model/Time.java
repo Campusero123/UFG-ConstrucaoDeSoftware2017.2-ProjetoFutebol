@@ -1,8 +1,9 @@
 package br.com.futcamp.model;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
- * Time.java
+ * Time.java 
  * Versão: <versaoDoArquivo>
  * Data de Criação: 27/10/2017
  * Copyright (c) 2017 UFG - www.ufg.br
@@ -30,29 +31,18 @@ public class Time extends Entidade {
 	 */
 	@Column(nullable = false)
     private String nome;
-	
-	/** 
-	 * Instacia do jogadores do Time
-	 */
-    @Column(nullable = false)
-    private ArrayList<Integer> idJogador;
     
     /**
      * Instancia do capitao do Time
      */
     @Column(nullable = false)
-    private Integer capitao;
-    
-    /**
-     * Instancia do Id do Time
-     */
-    @Column(nullable = false)
-    private Integer idTime;
+    private Long capitao;
     
 	/** 
 	 * Retorna o nome do Time
 	 * @return nome do Time
 	 */
+    @Column(nullable = false)
     public String getNome() {
         return nome;
     }
@@ -65,52 +55,20 @@ public class Time extends Entidade {
         this.nome = nome;
     }
     
-	/** 
-	 * Retorna o id's de jogadores do Time
-	 * @return id's de jogadores do Time
-	 */
-    public ArrayList<Integer> getIdJogador() {
-        return idJogador;
-    }
-    
-    /** 
-	 * Atribui o parâmetro idJogador como idJogador do Time
-	 * @param idJogador - idJogador que será atribuido ao Time
-	 */
-    public void setIdJogador(ArrayList<Integer> idJogador) {
-        this.idJogador = idJogador;
-    }
-    
     /**
      * Retorna o capitao do time
      * @param capitao
      */
-    public Integer getCapitao() {
+    public Long getCapitao() {
     	return capitao;
     }
     
     /**
      * Atribui o parâmetro capitao como capitao do Time
-     * @param capitao - capitao que será atribuido ao Time
+     * @param idJogador - capitao que será atribuido ao Time
      */
-    public void setCapitao(Integer capitao) {
-    	this.capitao = capitao;
-    }
-    
-    /**
-     * Retorna o Id do Time
-     * @return
-     */
-    public Integer getIdTime() {
-    	return idTime;
-    }
-    
-    /**
-     * Atribui o parâmetro idTime como Id do time
-     * @param idTime - idTime que será atribuido ao time
-     */
-    public void setIdTime(Integer idTime) {
-    	this.idTime = idTime;
+    public void setCapitao(Long idJogador) {
+    	this.capitao = idJogador;
     }
 
 }

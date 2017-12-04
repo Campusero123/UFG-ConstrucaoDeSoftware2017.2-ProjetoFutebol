@@ -1,8 +1,5 @@
 package br.com.futcamp.model;
-import java.security.acl.Permission; 
-import java.util.ArrayList;
 
-import br.com.futcamp.model.Pessoa;
 /**
  * Time.java  
  * Versão: <versaoDoArquivo>
@@ -13,27 +10,21 @@ import br.com.futcamp.model.Pessoa;
  * Este software tem o propósito de gerir campeonatos de futebol.
  */
 import javax.persistence.Column;
+import javax.persistence.Entity;
 
-public class Jogador extends Pessoa {
+@Entity
+public class Jogador extends Entidade {
 	
-	private static final long serialVersionUID = 1L;
+	/** 
+	 * Instacia do serialVersionUID do Time
+	 */
+	private static final long serialVersionUID = -9125277018717732648L;
 
-	public Jogador(String _nome, Double _contato, long _id) {
-		super(_nome, _contato, _id);
-		setIdJogador(_id);
-	}
-	
 	/** 
 	 * Nome do Jogador
 	 */
     @Column(nullable = false)
     private String nome;
-    
-    /** 
-	 * Lista de times de cada Jogador
-	 */
-    @SuppressWarnings("rawtypes")
-    private ArrayList<Entidade> listaTimes = new ArrayList();
     
     /** 
 	 * Atribui o parâmetro nome como nome do Jogador
@@ -48,34 +39,50 @@ public class Jogador extends Pessoa {
 	 * @return descricao da Campeonato
 	 */
     public String getNome() {
-        return nome;
+        return this.nome;
     }
     
     /**
      * Instancia do Id do Jogador
      */
     @Column(nullable = false)
-	private long idJogador;
-    
-    @Override
-    public Long getId() {
-    	// TODO Auto-generated method stub
-    	return super.getId();
-    }
+	private long idTime;
     
     /**
-     * Retorna o Id do Jogador
+     * Instancia do Id do Jogador
+     */
+    @Column(nullable = false)
+	private long idPessoa;
+    
+    /**
+     * Retorna o Id do Time
      * @return
      */
-    public long getIdJogador() {
-    	return getIdJogador();
+    public long getIdTime() {
+    	return this.idTime;
     }
     
     /**
-     * Atribui o parâmetro idJogador como Id do Jodagor
-     * @param idJogador - idJogador que será atribuido ao Jogador
+     * Atribui o parâmetro idTime como Id do Time
+     * @param idTime - Time que será atribuido ao Jogador
      */
-    public void setIdJogador(long idJogador) {
-    	this.idJogador = idJogador;
+    public void setIdTime(long idTime) {
+    	this.idTime = idTime;
     }
+    
+    /**
+     * Retorna o Id da Pessoa
+     * @return
+     */
+    public long getIdPessoa() {
+    	return this.idPessoa;
+    }
+    
+    /**
+     * Atribui o parâmetro idPessoa como Id da Pessoa
+     * @param idPessoa - Pessoa que será atribuido ao Jogador
+     */
+	public void setIdPessoa(Long id) {
+			this.idPessoa = id;
+	}
 }

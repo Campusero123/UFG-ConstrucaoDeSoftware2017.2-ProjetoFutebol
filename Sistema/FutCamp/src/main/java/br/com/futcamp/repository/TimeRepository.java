@@ -1,6 +1,6 @@
 package br.com.futcamp.repository;
 /**
- * TimeRepository.java
+ * TimeRepository.java 
  * Versão: <versaoDoArquivo>
  * Data de Criação: 27/10/2017
  * Copyright (c) 2017 UFG - www.ufg.br
@@ -8,7 +8,8 @@ package br.com.futcamp.repository;
  *
  * Este software tem o propósito de gerir campeonatos de futebol.
  */
-import org.springframework.stereotype.Repository; 
+import org.springframework.stereotype.Repository;
+
 import br.com.futcamp.model.Time;
 
 @Repository

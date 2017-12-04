@@ -1,6 +1,6 @@
 package br.com.futcamp.controller;
 /**
- * TimeController.java
+ * TimeController.java 
  * Versão: <versaoDoArquivo>
  * Data de Criação: 27/10/2017
  * Copyright (c) 2017 UFG - www.ufg.br
@@ -8,74 +8,73 @@ package br.com.futcamp.controller;
  *
  * Este software tem o propósito de gerir campeonatos de futebol.
  */
-import org.springframework.beans.factory.annotation.Autowired; 
+import org.springframework.beans.factory.annotation.Autowired;  
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import br.com.futcamp.model.Time;
-//import br.com.futcamp.service.timeService;
+import br.com.futcamp.service.TimeService;
 
 @Controller
 @RequestMapping("/Time")
 public class TimeController {
-    
-	/*
+    /*
 	@Autowired
 	private TimeService timeService;
-
+	
 	@RequestMapping("/")
-    public ModelAndView listarFilme() {
-    	ModelAndView modelAndView = new ModelAndView("filme/listar-filme", "command", new Time());
-    	modelAndView.addObject("titulo", "Filmes");
-		modelAndView.addObject("filmes", timeService.listarFilmes());
+    public ModelAndView listarTime() {
+    	ModelAndView modelAndView = new ModelAndView("time/listar-time", "command", new Time());
+    	modelAndView.addObject("titulo", "Times");
+		modelAndView.addObject("times", timeService.listarTimes());
 		return modelAndView;
     }
 
 	@RequestMapping("/pesquisar")
-    public ModelAndView pesquisarFilme(Filme filme) {
-		ModelAndView modelAndView = new ModelAndView("filme/listar-filme", "command", filme);
-    	modelAndView.addObject("titulo", "Filmes");
-    	modelAndView.addObject("filmes", filmeService.pesquisarFilmes(filme));
+    public ModelAndView pesquisarTime(Time time) {
+		ModelAndView modelAndView = new ModelAndView("time/listar-time", "command", time);
+    	modelAndView.addObject("titulo", "Times");
+    	modelAndView.addObject("times", timeService.pesquisarTimes(time));
     	return modelAndView;
     }
 
 	@RequestMapping("/cadastro")
-    public ModelAndView cadastrarFilme() {
-		ModelAndView modelAndView = new ModelAndView("filme/cadastrar-filme", "command", new Filme());
-		modelAndView.addObject("titulo", "Cadastrar Filme");
-		modelAndView.addObject("generos", Genero.values());
+    public ModelAndView cadastrarTime() {
+		ModelAndView modelAndView = new ModelAndView("time/cadastrar-time", "command", new Time());
+		modelAndView.addObject("titulo", "Cadastrar Time");
+		//modelAndView.addObject("generos", Genero.values());
 		return modelAndView;
     }
 	
 	@RequestMapping("/editar")
-    public ModelAndView editarFilme(Long id) {
-		Filme filme = filmeService.consultarFilme(id);
-		ModelAndView modelAndView = new ModelAndView("filme/cadastrar-filme", "command", filme);
+    public ModelAndView editarTime(Long id) {
+		Time time = timeService.consultarTime(id);
+		ModelAndView modelAndView = new ModelAndView("time/cadastrar-time", "command", time);
 		return modelAndView;
     }
 
 	@RequestMapping(value = "/salvar", method = RequestMethod.POST)
-	public ModelAndView salvarFilme(Filme filme) {
-		filmeService.salvarFilme(filme);
+	public ModelAndView salvarTime(Time time) {
+		timeService.salvarTime(time);
 
-    	return listarFilme();
+    	return listarTime();
     }
 
 	@RequestMapping("/locar")
-    public ModelAndView locarFilme() {
-    	ModelAndView modelAndView = new ModelAndView("filme/locar-filme");
-    	modelAndView.addObject("titulo", "Locar Filme");
+    public ModelAndView locarTime() {
+    	ModelAndView modelAndView = new ModelAndView("time/locar-time");
+    	modelAndView.addObject("titulo", "Locar Time");
     	return modelAndView;
     }
 
 	@RequestMapping(value = "/excluir")
-	public ModelAndView excluirFilme(Long id) {
-		Filme filme = filmeService.consultarFilme(id);
-		filmeService.deletarFilme(filme);
+	public ModelAndView excluirTime(Long id) {
+		Time time = timeService.consultarTime(id);
+		timeService.deletarTime(time);
 
-		return listarFilme();
+		return listarTime();
 	}
 	*/
 }

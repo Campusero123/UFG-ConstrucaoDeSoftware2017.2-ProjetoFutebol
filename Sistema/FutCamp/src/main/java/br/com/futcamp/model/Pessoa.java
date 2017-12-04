@@ -1,5 +1,5 @@
 package br.com.futcamp.model;
-import java.util.ArrayList;
+import java.util.ArrayList; 
 
 /**
  * Time.java
@@ -16,12 +16,12 @@ import javax.persistence.Entity;
 @Entity
 public class Pessoa extends Entidade{
 	
-	public Pessoa(String nome, double contato, long id) {
+	/*
+	public Pessoa(String nome, double contato) {
 		this.setNome(nome);
 		this.setContato(contato);
-		this.setId(id);
 	}
-	
+	*/
 	/** 
 	 * Instacia do serialVersionUID do Time
 	 */
@@ -37,7 +37,7 @@ public class Pessoa extends Entidade{
 	 * Instacia do quantidade do Campeonato
 	 */
     @Column(nullable = false)
-    private Double contato;
+    private int contato;
     
     /** 
 	 * Lista de times de cada Campeonato
@@ -65,7 +65,7 @@ public class Pessoa extends Entidade{
 	 * Retorna a descricao da Campeonato
 	 * @return descricao da Campeonato
 	 */
-    public Double getContato() {
+    public int getContato() {
         return contato;
     }
     
@@ -73,8 +73,8 @@ public class Pessoa extends Entidade{
 	 * Atribui a descriçãoo Campeonato
 	 * @param descriçãoo - descriçãoo que será atribuido ao Campeonato
 	 */
-    public void setContato(Double contato) {
-        this.contato = contato;
+    public void setContato(int tell) {
+        this.contato = tell;
     }
     
 	/** 
