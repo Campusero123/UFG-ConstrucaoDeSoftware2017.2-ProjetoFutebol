@@ -10,9 +10,9 @@ branches:
 
 env:
   global:
-    - TEST_RESULTS_DIR=$SHIPPABLE_REPO_DIR/UFG-ConstrucaoDeSoftware2017.2-ProjetoFutebol/Sistema/FutCamp/testresults
-    - CODE_COVERAGE_DIR=$SHIPPABLE_REPO_DIR/UFG-ConstrucaoDeSoftware2017.2-ProjetoFutebol/Sistema/FutCamp/codecoverage
-    - TESTS_LOC_DIR=$SHIPPABLE_REPO_DIR/UFG-ConstrucaoDeSoftware2017.2-ProjetoFutebol/Sistema/FutCamp/src/test
+    - TEST_RESULTS_DIR=$SHIPPABLE_REPO_DIR/UFG-ConstrucaoDeSoftware2017.2-ProjetoFutebol/Sistema/FutCamp/shippable/testresults
+    - CODE_COVERAGE_DIR=$SHIPPABLE_REPO_DIR/UFG-ConstrucaoDeSoftware2017.2-ProjetoFutebol/Sistema/FutCamp/shippable/codecoverage
+    - TESTS_LOC_DIR=$SHIPPABLE_REPO_DIR/UFG-ConstrucaoDeSoftware2017.2-ProjetoFutebol/Sistema/FutCamp/src/teste
     #- MOD_LOC=$SHIPPABLE_REPO_DIR/UFG-ConstrucaoDeSoftware2017.2-ProjetoFutebol/Sistema/FutCamp/.bin/
 
 build:
