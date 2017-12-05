@@ -11,5 +11,9 @@
             <i class="material-icons" role="presentation">movie</i>
             Times
         </a>
+        <a class="mdl-navigation__link" href="${s:mvcUrl('TC#listarTime').build()}">
+            <i class="material-icons" role="presentation">movie</i>
+            Campeonato
+        </a>
     </nav>
 </div>

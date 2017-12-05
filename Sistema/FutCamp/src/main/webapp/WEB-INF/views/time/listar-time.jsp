@@ -78,7 +78,7 @@
 						<th class="mdl-data-table__cell--non-numeric">Título</th>
 						<th class="mdl-data-table__cell--non-numeric">ID Capitão</th>
 						<th class="mdl-data-table__cell--non-numeric">Ações</th>
-						<th class="mdl-data-table__cell--non-numeric">Data de Lançamento</th>
+						<th class="mdl-data-table__cell--non-numeric">Próximo Conflito</th>
 					</tr>
 				</thead>
 				<tbody>

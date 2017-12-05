@@ -11,19 +11,19 @@
 <main class="mdl-layout__content mdl-color--grey-100">
     <div class="mdl-card mdl-shadow--2dp employer-form" action="#">
         <div class="mdl-card__title">
-            <h2>Filme</h2>
+            <h2>Time</h2>
         </div>
 
         <div class="mdl-card__supporting-text">
-            <form:form action="${s:mvcUrl('FC#salvarFilme').build()}" method="POST" cssClass="form">
+            <form:form action="${s:mvcUrl('TC#salvarTime').build()}" method="POST" cssClass="form">
                 <div class="form__article">
                 
                 	<form:hidden path="id"/>
                 	
                     <div class="mdl-grid">
                         <div class="mdl-cell mdl-cell--8-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <form:input cssClass="mdl-textfield__input" path="titulo" required="true"/>
-                            <form:label cssClass="mdl-textfield__label" path="titulo">Título</form:label>
+                            <form:input cssClass="mdl-textfield__input" path="nome" required="true"/>
+                            <form:label cssClass="mdl-textfield__label" path="nome">Nome</form:label>
                         </div>
                         
 <!--                         <div class="mdl-cell mdl-cell--4-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select"> -->
@@ -83,24 +83,8 @@
 
                     <div class="mdl-grid">
                         <div class="mdl-cell mdl-cell--3-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <form:input cssClass="mdl-textfield__input time" path="duracao" required="true"/>
-                            <form:label cssClass="mdl-textfield__label" path="duracao">Duração</form:label>
-                        </div>
-
-                        <div class="mdl-cell mdl-cell--3-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <form:input cssClass="mdl-textfield__input" path="dataLancamento" onkeypress="mascaraData(this)" required="true"/>
-                            <form:label cssClass="mdl-textfield__label"
-                                        path="dataLancamento">Data de Lançamento</form:label>
-                        </div>
-
-                        <div class="mdl-cell mdl-cell--3-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <form:input cssClass="mdl-textfield__input" path="censura" maxlength="2" onkeyup="somenteNumeros(this)" required="true"/>
-                            <form:label cssClass="mdl-textfield__label" path="censura">Censura</form:label>
-                        </div>
-
-                        <div class="mdl-cell mdl-cell--3-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <form:input cssClass="mdl-textfield__input" path="quantidade" maxlength="2" onkeyup="somenteNumeros(this)" required="true"/>
-                            <form:label cssClass="mdl-textfield__label" path="quantidade">Quantidade</form:label>
+                            <form:input cssClass="mdl-textfield__input" path="capitao" maxlength="30"/>
+                            <form:label cssClass="mdl-textfield__label" path="capitao">Capitão</form:label>
                         </div>
                     </div>
                 </div>
@@ -109,7 +93,7 @@
                         Salvar
                     </button>
                     <a id="cancela_button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored-red" data-upgraded=",MaterialButton,MaterialRipple"
-                		href="${s:mvcUrl('FC#listarFilme').build()}" style="width: 115px;" >
+                		href="${s:mvcUrl('TC#listarTime').build()}" style="width: 115px;" >
                 		<i class="material-icons">reply</i>
                 			Cancelar
                 		<span class="mdl-button__ripple-container"><span class="mdl-ripple is-animating" style="width: 271.783px; height: 271.783px; transform: translate(-50%, -50%) translate(95px, 26px);"></span></span>

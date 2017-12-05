@@ -28,8 +28,8 @@
 
                     <div class="mdl-grid">
                         <div class="mdl-cell mdl-cell--3-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <input class="mdl-textfield__input" type="number" id="codigo-filme" value="210"/>
-                            <label class="mdl-textfield__label" for="codigo-filme">Código do filme</label>
+                            <input class="mdl-textfield__input" type="number" id="codigo-time" value="210"/>
+                            <label class="mdl-textfield__label" for="codigo-time">Código do time</label>
                         </div>
 
                         <div class="mdl-cell mdl-cell--3-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label is-dirty is-upgraded" data-upgraded=",MaterialTextfield">
@@ -120,7 +120,7 @@
                 
                 <div class="form__action">
                     <a id="submit_button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored-light-blue" data-upgraded=",MaterialButton,MaterialRipple" style="width: 115px;"
-                    	href="${s:mvcUrl('FC#listarFilme').build()}" >
+                    	href="${s:mvcUrl('TC#listarFilme').build()}" >
                     	<i class="material-icons">forward</i>
                         Confirma
                         <span class="mdl-button__ripple-container"><span class="mdl-ripple is-animating" style="width: 271.783px; height: 271.783px; transform: translate(-50%, -50%) translate(95px, 26px);"></span></span>
@@ -136,7 +136,7 @@
                         <span class="mdl-button__ripple-container"><span class="mdl-ripple is-animating" style="width: 271.783px; height: 271.783px; transform: translate(-50%, -50%) translate(95px, 26px);"></span></span>
                     </a>
                     <a id="cancela_button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored-red" data-upgraded=",MaterialButton,MaterialRipple"
-                    	href="${s:mvcUrl('FC#listarFilme').build()}" style="width: 115px;">
+                    	href="${s:mvcUrl('TC#listarFilme').build()}" style="width: 115px;">
                     	<i class="material-icons">reply</i>
                     		Cancelar
                     	<span class="mdl-button__ripple-container"><span class="mdl-ripple is-animating" style="width: 271.783px; height: 271.783px; transform: translate(-50%, -50%) translate(95px, 26px);"></span></span>
