@@ -19,7 +19,7 @@ import br.com.futcamp.model.Time;
 
 @Controller
 @RequestMapping("/Time")
-public class TimeController {
+public class TimeControllerTeste {
     
 	/*
 	@Autowired

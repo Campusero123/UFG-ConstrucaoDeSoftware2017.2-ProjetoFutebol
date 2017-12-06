@@ -18,7 +18,7 @@ import javax.persistence.Entity;
  */
 
 @Entity
-public class Time extends Entidade {
+public class TimeTeste extends Entidade {
 	
 	/** 
 	 * Instacia do serialVersionUID do Time

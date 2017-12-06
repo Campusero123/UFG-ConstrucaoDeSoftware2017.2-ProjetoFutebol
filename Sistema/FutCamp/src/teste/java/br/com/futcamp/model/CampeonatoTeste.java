@@ -14,7 +14,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 
 @Entity
-public class Campeonato extends Entidade {
+public class CampeonatoTeste extends Entidade {
 	
 	/** 
 	 * Instacia do serialVersionUID do Time

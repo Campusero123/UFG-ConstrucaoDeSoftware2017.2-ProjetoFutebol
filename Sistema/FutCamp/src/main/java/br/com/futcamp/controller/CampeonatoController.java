@@ -23,6 +23,7 @@ import br.com.futcamp.service.TimeService;
 @RequestMapping("/Campeonato")
 public class CampeonatoController {
     
+	/*
 	@Autowired
 	private CampeonatoService campeonatoService;
 	
@@ -71,5 +72,5 @@ public class CampeonatoController {
 
 		return listarCampeonato();
 	}
-	
+	*/
 }

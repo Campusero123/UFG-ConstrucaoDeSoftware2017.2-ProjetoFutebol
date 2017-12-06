@@ -21,7 +21,7 @@ import java.util.logging.Level;
 import java.util.logging.SimpleFormatter;
 
 @Controller
-public class LoginController {
+public class LoginControllerTeste {
 	
 	//Configura log de acesso ao logar e deslogar
 	private void configLog() {

@@ -14,7 +14,7 @@ import javax.persistence.Id;
 import org.springframework.security.core.GrantedAuthority;
 
 @Entity
-public class Role implements GrantedAuthority {
+public class RoleTeste implements GrantedAuthority {
 	
     /** 
 	 * Instacia do serialVersionUID da Role

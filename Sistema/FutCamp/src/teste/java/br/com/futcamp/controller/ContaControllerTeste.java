@@ -14,7 +14,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @RequestMapping("/conta")
-public class ContaController {
+public class ContaControllerTeste {
 
 	@RequestMapping("/minha-conta")
 	public ModelAndView minhaConta() {

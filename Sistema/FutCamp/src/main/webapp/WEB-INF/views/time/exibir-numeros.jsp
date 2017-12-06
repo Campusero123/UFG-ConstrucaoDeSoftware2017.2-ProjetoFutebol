@@ -7,7 +7,7 @@
 <main class="mdl-layout__content mdl-color--grey-100">
     <div class="mdl-card mdl-shadow--2dp employer-form" action="#">
         <div class="mdl-card__title">
-            <h2>Locar Filme</h2>
+            <h2>Exibir números</h2>
         </div>
 
         <div class="mdl-card__supporting-text">

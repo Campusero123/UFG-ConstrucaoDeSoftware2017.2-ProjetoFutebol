@@ -14,14 +14,9 @@ import br.com.futcamp.model.Pessoa;
  */
 import javax.persistence.Column;
 
-public class Jogador extends Pessoa {
+public class JogadorTeste extends Pessoa {
 	
 	private static final long serialVersionUID = 1L;
-
-	public Jogador(String _nome, Double _contato, long _id) {
-		super(_nome, _contato, _id);
-		setIdJogador(_id);
-	}
 	
 	/** 
 	 * Nome do Jogador

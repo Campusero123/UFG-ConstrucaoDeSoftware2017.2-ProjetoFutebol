@@ -21,7 +21,7 @@ import org.springframework.stereotype.Repository;
 import br.com.futcamp.model.Usuario;
 
 @Repository
-public class UsuarioDAO implements UserDetailsService {
+public class UsuarioDAOTeste implements UserDetailsService {
 	
     /** 
 	 * Instacia do configurador do UsuarioDAO

@@ -14,9 +14,9 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 
 @Entity
-public class Pessoa extends Entidade{
+public class PessoaTeste extends Entidade{
 	
-	public Pessoa(String nome, double contato, long id) {
+	public PessoaTeste(String nome, double contato, long id) {
 		this.setNome(nome);
 		this.setContato(contato);
 		this.setId(id);
