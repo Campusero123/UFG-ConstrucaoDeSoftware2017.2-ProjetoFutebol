@@ -17,9 +17,6 @@ import org.springframework.web.servlet.ModelAndView;
 import br.com.futcamp.model.Time;
 import br.com.futcamp.service.TimeService;
 
-import junit.framework.Assert;
-import junit.framework.Test;
-
 @Controller
 @RequestMapping("/Time")
 public class TimeController {
