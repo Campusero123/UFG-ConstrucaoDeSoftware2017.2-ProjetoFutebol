@@ -1,6 +1,6 @@
 package br.com.futcamp.controller;
 /**
- * TimeController.java 
+ * TimeController.java
  * Versão: <versaoDoArquivo>
  * Data de Criação: 27/10/2017
  * Copyright (c) 2017 UFG - www.ufg.br
@@ -8,22 +8,20 @@ package br.com.futcamp.controller;
  *
  * Este software tem o propósito de gerir campeonatos de futebol.
  */
-import org.springframework.beans.factory.annotation.Autowired;   
+import org.springframework.beans.factory.annotation.Autowired; 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import br.com.futcamp.model.Time;
+//import br.com.futcamp.service.timeService;
 import br.com.futcamp.service.TimeService;
-
-import junit.framework.Assert;
-import junit.framework.Test;
 
 @Controller
 @RequestMapping("/Time")
-public class TimeController {
-    
+public class TimeControllerTeste {
+
 	@Autowired
 	private TimeService timeService;
 	
@@ -83,5 +81,4 @@ public class TimeController {
 
 		return listarTime();
 	}
-	
 }
