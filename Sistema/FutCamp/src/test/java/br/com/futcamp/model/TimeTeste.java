@@ -1,8 +1,7 @@
 package br.com.futcamp.model;
-import java.util.ArrayList;
 
 /**
- * Time.java
+ * Time.java 
  * Versão: <versaoDoArquivo>
  * Data de Criação: 27/10/2017
  * Copyright (c) 2017 UFG - www.ufg.br
@@ -10,107 +9,55 @@ import java.util.ArrayList;
  *
  * Este software tem o propósito de gerir campeonatos de futebol.
  */
-import javax.persistence.Column;
-import javax.persistence.Entity;
+
+import org.junit.Test; 
+import junit.framework.Assert;
+import junit.framework.TestCase;
+import br.com.futcamp.model.Time;
 
 /**
- * Created by astr1x on 08/07/17.
+ * Classe feita para testar objeto time
  */
-
-@Entity
-public class TimeTeste extends Entidade {
+public class TimeTeste extends TestCase {
+	Time time = new Time();
+	long id = 123;
+	String test = "igor";
 	
 	/** 
-	 * Instacia do serialVersionUID do Time
+	 * testa consulta do nome do Time
 	 */
-	private static final long serialVersionUID = -3086085358857810874L;
+	@Test
+    private void defineTime() {
+		time.setCapitao(id);
+		time.setId(id);
+		time.setNome(test);
+	}
 	
 	/** 
-	 * Instacia do nome do Time
+	 * testa consulta do nome do Time
 	 */
-	@Column(nullable = false)
-    private String nome;
+	@Test
+    private void timeConsultaNomeTeste() {
+		defineTime();
+		Assert.assertEquals(test, time.getNome());
+	}
 	
 	/** 
-	 * Instacia do jogadores do Time
+	 * testa consulta do id do capitao do Time
 	 */
-    @Column(nullable = false)
-    private ArrayList<Integer> idJogador;
-    
-    /**
-     * Instancia do capitao do Time
-     */
-    @Column(nullable = false)
-    private Integer capitao;
-    
-    /**
-     * Instancia do Id do Time
-     */
-    @Column(nullable = false)
-    private Integer idTime;
-    
+	@Test
+    private void timeConsultaCapitaoTeste() {
+		defineTime();
+		//Assert.assertEquals(123, time.getCapitao());
+	}
+	
 	/** 
-	 * Retorna o nome do Time
-	 * @return nome do Time
+	 * testa consulta do id do capitao do Time
 	 */
-    public String getNome() {
-        return nome;
-    }
-    
-    /** 
-	 * Atribui o parâmetro nome como nome do Time
-	 * @param nome - nome que será atribuido ao Time
-	 */
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-    
-	/** 
-	 * Retorna o id's de jogadores do Time
-	 * @return id's de jogadores do Time
-	 */
-    public ArrayList<Integer> getIdJogador() {
-        return idJogador;
-    }
-    
-    /** 
-	 * Atribui o parâmetro idJogador como idJogador do Time
-	 * @param idJogador - idJogador que será atribuido ao Time
-	 */
-    public void setIdJogador(ArrayList<Integer> idJogador) {
-        this.idJogador = idJogador;
-    }
-    
-    /**
-     * Retorna o capitao do time
-     * @param capitao
-     */
-    public Integer getCapitao() {
-    	return capitao;
-    }
-    
-    /**
-     * Atribui o parâmetro capitao como capitao do Time
-     * @param capitao - capitao que será atribuido ao Time
-     */
-    public void setCapitao(Integer capitao) {
-    	this.capitao = capitao;
-    }
-    
-    /**
-     * Retorna o Id do Time
-     * @return
-     */
-    public Integer getIdTime() {
-    	return idTime;
-    }
-    
-    /**
-     * Atribui o parâmetro idTime como Id do time
-     * @param idTime - idTime que será atribuido ao time
-     */
-    public void setIdTime(Integer idTime) {
-    	this.idTime = idTime;
-    }
+	@Test
+    private void timeConsultaIDTeste() {
+		defineTime();
+		//Assert.assertEquals(id, time.getId());
+	}
 
 }

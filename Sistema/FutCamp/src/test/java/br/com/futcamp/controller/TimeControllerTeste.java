@@ -1,4 +1,6 @@
 package br.com.futcamp.controller;
+import javax.persistence.Entity;
+
 /**
  * TimeController.java
  * Versão: <versaoDoArquivo>
@@ -8,77 +10,46 @@ package br.com.futcamp.controller;
  *
  * Este software tem o propósito de gerir campeonatos de futebol.
  */
-import org.springframework.beans.factory.annotation.Autowired; 
-import org.springframework.stereotype.Controller;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import br.com.futcamp.model.Time;
-//import br.com.futcamp.service.timeService;
-import br.com.futcamp.service.TimeService;
+import br.com.futcamp.controller.TimeController;
+import junit.framework.Assert;
+import junit.framework.Test;
 
-@Controller
+@Entity
 @RequestMapping("/Time")
 public class TimeControllerTeste {
 
 	@Autowired
-	private TimeService timeService;
-	
-	@RequestMapping("/")
-    public ModelAndView listarTime() {
-    	ModelAndView modelAndView = new ModelAndView("time/listar-time", "command", new Time());
-    	modelAndView.addObject("titulo", "Times");
-		modelAndView.addObject("times", timeService.listarTimes());
-		return modelAndView;
-    }
-
-	@RequestMapping("/pesquisar")
-    public ModelAndView pesquisarTime(Time time) {
-		ModelAndView modelAndView = new ModelAndView("time/listar-time", "command", time);
-    	modelAndView.addObject("titulo", "Times");
-    	modelAndView.addObject("times", timeService.pesquisarTimes(time));
-    	return modelAndView;
-    }
-
-	@RequestMapping("/cadastro")
-    public ModelAndView cadastrarTime() {
-		ModelAndView modelAndView = new ModelAndView("time/cadastrar-time", "command", new Time());
-		modelAndView.addObject("titulo", "Cadastrar Time");
-		//modelAndView.addObject("generos", Genero.values()); - Exemplo para add outro atributo
-		return modelAndView;
-    }
-	
-	@RequestMapping("/editar")
-    public ModelAndView editarTime(Long id) {
-		Time time = timeService.consultarTime(id);
-		ModelAndView modelAndView = new ModelAndView("time/cadastrar-time", "command", time);
-		return modelAndView;
-    }
-
-	@RequestMapping(value = "/salvar", method = RequestMethod.POST)
-	public ModelAndView salvarTime(Time time) {
-		timeService.salvarTime(time);
-
-    	return listarTime();
-    }
-	
+	private TimeController timeController;
 	/*
-	 * Exemplo de como chamar outra função
-	 */
-	@RequestMapping("/exibir")
-    public ModelAndView exibirNumeros(Long id) {
-    	ModelAndView modelAndView = new ModelAndView("time/exibir-numeros");
-    	modelAndView.addObject("titulo", "Exibir numeros");
-		modelAndView.addObject("times", timeService.pesquisarJogadores(id));
-    	return modelAndView;
+    public void testaListarTime() {
+    	TimeController.class.
+        Assert.assertTrue(Palindromo.ehPalindromo(PALINDROMO_6));
+        
     }
-
-	@RequestMapping(value = "/excluir")
-	public ModelAndView excluirTime(Long id) {
-		Time time = timeService.consultarTime(id);
-		timeService.deletarTime(time);
-
-		return listarTime();
-	}
+    public void testaPesquisarTime() {
+    	Assert.assertTrue(Palindromo.ehPalindromo(PALINDROMO_7));
+    }
+    
+    public void testaCadastrarTime() {
+        Assert.assertFalse(Palindromo.ehPalindromo(PALINDROMO_10));
+    }
+    
+    public void testaEditarTime() {
+    	Assert.assertFalse(Palindromo.ehPalindromo(PALINDROMO_8));
+    }
+	
+    public void testaSalvarTime() {
+    	Assert.assertFalse(Palindromo.ehPalindromo(PALINDROMO_8));
+    }
+    
+    public void testaExcluirTime() {
+    	Assert.assertFalse(Palindromo.ehPalindromo(PALINDROMO_8));
+    }
+    */
 }
